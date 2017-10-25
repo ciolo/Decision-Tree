@@ -205,7 +205,7 @@ for i in np.arange(0, 15, 1):
     print(i)
 
     dt = DecisionTree(X, y, features)
-    dt.learn_tree(X, i)
+    dt.learn_tree(X, i) # i is the hyperparameter
 
     preds_train = []
     for index, row in df_tr.iterrows():
