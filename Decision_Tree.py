@@ -200,7 +200,7 @@ features = list(df_tr.columns[:columns-1])
 scores = []
 scores2 = []
 
-# start = time.time()
+start = time.time()
 for i in np.arange(0, 15, 1):
     print(i)
 
@@ -217,8 +217,8 @@ for i in np.arange(0, 15, 1):
         preds_test.append(list(dt.predict(row).keys())[0])
     scores2.append(accuracy_score(test_labels, preds_test))
 
-"""end = time.time()
-print(end - start)"""
+end = time.time()
+print(end - start)
 
 print(scores)
 print(scores2)
